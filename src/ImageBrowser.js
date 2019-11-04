@@ -8,7 +8,10 @@ import {
   Dimensions,
   Button
 } from 'react-native';
+/* NOTE: EXPO SDK 35 doesn't work with this import format of the FileSystem module
 import { FileSystem } from 'expo';
+*/
+import * as FileSystem from 'expo-file-system';
 import ImageTile from './ImageTile';
 const { width } = Dimensions.get('window')
 
